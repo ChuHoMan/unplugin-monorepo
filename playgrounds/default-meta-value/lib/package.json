@@ -1,0 +1,21 @@
+{
+  "name": "@test/default-meta-value-lib",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/lib.js"
+    },
+    "./bar": {
+      "types": "./dist/bar.d.ts",
+      "import": "./dist/bar.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+  }
+}

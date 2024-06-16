@@ -1,0 +1,14 @@
+{
+  "name": "@test/default-meta-value-app",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "dev": "nodemon -w '../../../src/**/*.ts' -e .ts -x vite"
+  },
+  "devDependencies": {
+    "@test/default-meta-value-lib": "workspace:*",
+    "@test/default-meta-value-lib2": "workspace:*",
+    "vite": "^5.0.4",
+    "vite-plugin-inspect": "^0.8.1"
+  }
+}

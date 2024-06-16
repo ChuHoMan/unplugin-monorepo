@@ -1,0 +1,13 @@
+{
+  "name": "@test/basic-app",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "dev": "nodemon -w '../../../src/**/*.ts' -e .ts -x vite"
+  },
+  "devDependencies": {
+    "@test/lib": "workspace:*",
+    "vite": "^5.0.4",
+    "vite-plugin-inspect": "^0.8.1"
+  }
+}

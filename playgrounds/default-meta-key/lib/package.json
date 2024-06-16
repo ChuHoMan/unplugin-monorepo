@@ -1,0 +1,28 @@
+{
+  "name": "@test/default-meta-key-lib",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/lib.js"
+    },
+    "./bar": {
+      "types": "./dist/bar.d.ts",
+      "import": "./dist/bar.js"
+    },
+    "./foo": {
+      "types": "./dist/foo.d.ts",
+      "import": "./dist/foo.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+  },
+  "vite": {
+    "sourceDir": "src/sub"
+  }
+}

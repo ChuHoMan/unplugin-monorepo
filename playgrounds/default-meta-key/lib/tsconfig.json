@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "es2017",
+    "jsx": "preserve",
+    "lib": ["esnext", "DOM"],
+    "baseUrl": "./",
+    "rootDir": "src/sub",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "esModuleInterop": true
+  },
+  "include": ["src"]
+}
