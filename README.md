@@ -2,6 +2,11 @@
 
 [![npm](https://img.shields.io/npm/v/unplugin-monorepo?color=91B2D4&label=)](https://npmjs.com/package/unplugin-monorepo)
 
+<p align='center'>
+<b>English</b> | <a href="https://github.com/ChuHoMan/unplugin-monorepo/blob/main/README.zh-CN.md">简体中文</a>
+</p>
+
+
 Require the least configuration for support bundling of local packages within a monorepo.
 
 > Inspired by [vite-ts-monorepo-rfc](https://github.com/vitejs/vite-ts-monorepo-rfc/blob/main/RFC-v1.md#5-vitebundler-packagejson-configuration)
@@ -177,7 +182,7 @@ export interface Options {
 
 ## Examples
 
-TODO
+There are examples in the [playgrounds](https://github.com/ChuHoMan/unplugin-monorepo/tree/main/playgrounds) of this repository, which you can refer to.
 
 ## Credits
 

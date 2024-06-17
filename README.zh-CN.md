@@ -2,6 +2,10 @@
 
 [![npm](https://img.shields.io/npm/v/unplugin-monorepo?color=91B2D4&label=)](https://npmjs.com/package/unplugin-monorepo)
 
+<p align='center'>
+<a href="https://github.com/ChuHoMan/unplugin-monorepo/blob/main/README.md">English</a> | <b>简体中文</b>
+</p>
+
 使用最少的配置来支持在单体仓库中打包本地包。
 
 > 灵感来自于 [vite-ts-monorepo-rfc](https://github.com/vitejs/vite-ts-monorepo-rfc/blob/main/RFC-v1.md#5-vitebundler-packagejson-configuration)
@@ -177,7 +181,7 @@ export interface Options {
 
 ## 示例
 
-TODO
+在 本仓库的 [playgrounds](https://github.com/ChuHoMan/unplugin-monorepo/tree/main/playgrounds) 内有示例，你可以参考它们。
 
 ## 致谢
 
