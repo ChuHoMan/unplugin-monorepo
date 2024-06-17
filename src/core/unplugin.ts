@@ -4,6 +4,9 @@ import { UnpluginFactory, createUnplugin } from 'unplugin';
 import type { ResolvedConfig } from 'vite';
 import { Options } from '../types';
 import { bareImportRE, findDepPkgJsonPath, getNpmPackageName, isInNodeModules, loadPackageData } from './utils';
+import { createDebugger } from './debugger';
+
+const debug = createDebugger('unplugin-monorepo');
 
 export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) => {
   const { packageMetaDefaultValue, packageMetaKey = 'bundler' } = options || {};
@@ -24,6 +27,7 @@ export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) =
       const depPkgRoot = path.dirname(depPkgPath);
       const symlinksDepPkgPath = await findDepPkgJsonPath(getNpmPackageName(id)!, root, true) ?? '';
       const pkgRootDirStat = await fsp.lstat(path.dirname(symlinksDepPkgPath));
+      debug('dep package.json path:', depPkgPath, '\nsymlinks: ', symlinksDepPkgPath);
       // pkg root dir is not symlink or real dir in node_modules, we skip it
       if (!pkgRootDirStat.isSymbolicLink() || isInNodeModules(depPkgPath)) {
         return;
@@ -36,6 +40,7 @@ export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) =
       if (sourceDir) {
         const sourceSrc = path.resolve(depPkgRoot, sourceDir);
         const sourceResolved = await (this as any).resolve(sourceSrc, importer, options);
+        debug('resolved: ', sourceResolved);
         return sourceResolved;
       }
 
