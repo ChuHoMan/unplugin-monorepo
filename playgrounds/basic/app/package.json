@@ -5,8 +5,11 @@
     "start": "vite",
     "dev": "nodemon -w '../../../src/**/*.ts' -e .ts -x vite"
   },
-  "devDependencies": {
+  "dependencies": {
     "@test/lib": "workspace:*",
+    "clsx": "2.1.1"
+  },
+  "devDependencies": {
     "vite": "^5.0.4",
     "vite-plugin-inspect": "^0.8.1"
   }
