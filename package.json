@@ -1,6 +1,6 @@
 {
   "name": "unplugin-monorepo",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "packageManager": "pnpm@8.15.3",
   "description": "",
   "license": "MIT",
@@ -17,7 +17,10 @@
     "vite",
     "webpack",
     "rollup",
-    "transform"
+    "monorepo",
+    "pnpm",
+    "source code",
+    "DX"
   ],
   "exports": {
     ".": {
@@ -87,7 +90,7 @@
     "build:fix": "tsx scripts/postbuild.ts",
     "lint": "eslint .",
     "prepublishOnly": "npm run build",
-    "release": "bumpp && npm publish",
+    "release": "bumpp package.json --commit --push --tag && pnpm publish",
     "start": "tsx src/index.ts",
     "test": "vitest"
   },
