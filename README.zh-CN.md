@@ -6,7 +6,7 @@
 <a href="https://github.com/ChuHoMan/unplugin-monorepo/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
 
-使用最少的配置来支持在单体仓库中打包本地包。
+使用最少的配置来支持在 monorepo 中打包本地包。
 
 > 灵感来自于 [vite-ts-monorepo-rfc](https://github.com/vitejs/vite-ts-monorepo-rfc/blob/main/RFC-v1.md#5-vitebundler-packagejson-configuration)
 
